@@ -14,7 +14,7 @@ body, html{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 0.5fr 1fr 3fr 3fr;
-    gap: 15px;
+    row-gap: 15px;
     grid-template-areas: 
                         "sidebar header header"
                         "sidebar nav nav"
@@ -28,7 +28,18 @@ body, html{
 
 .header{
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 3fr;
 }
+
+.announcement{
+    grid-area: announcement;
+}
+
+.trending{
+    grid-area: trending;
+}
+
 
 .sidebar{
     grid-area: sidebar;
@@ -64,15 +75,8 @@ body, html{
     grid-area: project;
 }
 
-.announcement{
-    grid-area: announcement;
-}
 
-.trending{
-    grid-area: trending;
-}
-
-.sidebar img{
+img{
     height: 1rem;
     width: 1rem;
     justify-self: end;
@@ -92,4 +96,23 @@ body, html{
 .sidebar div{
     grid-column: 2;
     font-size: 1rem;
+}
+
+.search-button{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.search-bar{
+
+}
+
+.notification{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.name{
+    font-size: 1.5rem;
+    
 }
