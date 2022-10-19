@@ -61,7 +61,7 @@ body, html{
 
 .name{
     font-size: 1.2rem;
-    grid-column: 15 / 19;
+    grid-column: 15 / 20;
 }
 
 .search-button{
